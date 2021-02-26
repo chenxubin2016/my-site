@@ -4,6 +4,7 @@ yarn-error.log
 node_modules/
 package-lock.json
 yarn.lock
+dist
 coverage/
 .idea/
 run/
