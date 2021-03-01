@@ -50,7 +50,7 @@ module.exports = {
         .loader("sass-resources-loader")
         .options({
           // 要公用的scss的路径
-          resources: "./src/assets/scss/public.scss"
+          resources: resolve("./src/assets/scss/public.scss")
         })
         .end();
     });

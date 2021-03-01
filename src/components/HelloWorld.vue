@@ -21,9 +21,7 @@ export default {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center);
     h2 {
       position: absolute;
       color: #fff;
@@ -31,12 +29,12 @@ export default {
       text-transform: uppercase;
       font-weight: 700;
       z-index: 2;
-      transition: 2s;
-      &:hover{
+      @include transition(2s);
+      &:hover {
         filter: blur(5px);
         transition: 2s;
-        transform: scale(1.2);
-        & ~ img{
+        @include scale(1.2);
+        & ~ img {
           top: 0;
           left: 0;
           width: 100vw;
@@ -45,16 +43,16 @@ export default {
         }
       }
     }
-    img{
+    img {
       position: absolute;
-      top:-20%;
-      left:-20%;
+      top: -20%;
+      left: -20%;
       width: 140vw;
       height: 140vh;
       pointer-events: none;
       object-fit: cover;
       filter: blur(10px);
-      transition: 2s;
+      @include transition(2s);
     }
   }
 </style>
