@@ -125,7 +125,7 @@ module.exports = {
     "consistent-this": [2, "self"], // ??? 要求一致的 This
     "eol-last": [1, "always"], // ??? 要求或禁止文件末尾保留一行空行
     "func-call-spacing": 2, // 要求或禁止在函数标识符和其调用之间有空格
-    "func-style": [2, "declaration"], // ??? 强制 function 声明或表达式的一致性
+    "func-style": [1, "declaration"], // ??? 强制 function 声明或表达式的一致性
     "function-paren-newline": [1, "multiline"], // 强制在函数括号内使用一致的换行
     indent: [2, 2], // 强制使用一致的缩进
     "jsx-quotes": 2, // 强制在 JSX 属性中一致地使用双引号或单引号
