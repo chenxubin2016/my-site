@@ -10,6 +10,7 @@
     "lintfix": "eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "compression-webpack-plugin": "^6.1.1",
     "core-js": "^3.6.5",
     "image-webpack-loader": "^7.0.1",

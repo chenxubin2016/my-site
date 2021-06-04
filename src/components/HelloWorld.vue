@@ -6,11 +6,22 @@
 </template>
 
 <script>
+import {getIp} from '@/assets/js/getIp';
 export default {
   name: "HelloWorld",
   props: { msg: String },
   data() {
-    return {};
+    return {
+     ip:''
+    };
+  },
+  created(){
+   
+  },
+  mounted(){
+   getIp(ip=>{
+    this.ip=ip
+   })
   },
   methods: {}
 };
