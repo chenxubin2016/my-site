@@ -28,6 +28,16 @@ const routes = [
     path: "/VideoPreview",
     name: "VideoPreview",
     component: () => import("../views/VideoPreview.vue")
+  },
+  {
+    path: "/ShowCanvas",
+    name: "ShowCanvas",
+    component: () => import("../views/showCanvas.vue")
+  },
+  {
+    path: "/Signature",
+    name: "Signature",
+    component: () => import("../views/Signature.vue")
   }
 ];
 

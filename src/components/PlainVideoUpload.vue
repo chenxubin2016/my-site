@@ -84,9 +84,9 @@ export default {
           const result = await uploadAction("/uploadImg", formData, progressEvent => {
             console.log("progressEvent=======", progressEvent);
             const { loaded, total } = progressEvent;
-            fileObj.progress = ((loaded / total) * 100).toFixed(0) + "%";
+            fileObj.progress = `${Math.floor(loaded * 100 / total)}%`;
           });
-          console.log(result)
+          console.log(result);
           this.imgList.push(fileObj);
           if (result.statusText === "OK") {
             const { data } = result.data;
